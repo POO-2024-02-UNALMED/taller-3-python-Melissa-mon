@@ -1,8 +1,6 @@
-from _future_ import annotations
-
 class Control:
-    def _init_(self) -> None: # Se puede eliminar
-        self._tv = None    # Se puede eliminar
+
+    _tv = None
 
     def enlazar(self, tv):
         self._tv = tv
@@ -32,8 +30,8 @@ class Control:
     def setVolumen(self, volumen: int) -> None:
         self._tv.setVolumen(volumen)
 
-    def getTv(self) -> TV:
+    def getTv(self):
         return self._tv
     
-    def setTv(self, tv: TV) -> None:
+    def setTv(self, tv):
         self._tv = tv
