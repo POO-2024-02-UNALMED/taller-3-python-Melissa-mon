@@ -1,6 +1,6 @@
 class Control:
 
-    _tv = None
+    _tv = 0
 
     def enlazar(self, tv):
         self._tv = tv
